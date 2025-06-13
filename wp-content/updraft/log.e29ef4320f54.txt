@@ -1,0 +1,690 @@
+0000.002 (0) Opened log file at time: Tue, 10 Jun 2025 22:42:08 +0000 on https://www.chateaudetaulignan.com
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.6 WP: 6.8.1 PHP: 8.2.28 (fpm-fcgi, Linux webm019.cluster023.gra.hosting.ovh.net 5.15.167-ovh-vps-grsec-zfs-classid #1 SMP Tue Sep 17 08:14:20 UTC 2024 x86_64) MySQL: 8.0.41-32 (max packet size=33554432) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 165 memory_limit: 512M (used: 74.1M | 76M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 4883214.8 MB
+0000.009 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.010 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.018 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1748990490, seconds_ago=604838)
+0000.022 (0) Set semaphore last lock (fd) time to 2025-06-10 22:42:08
+0000.024 (0) Semaphore lock (fd) complete
+0000.029 (0) Backup run: resumption=0, nonce=e29ef4320f54, file_nonce=e29ef4320f54 begun at=1749595328 (0s ago), job type=backup
+0000.031 (0) Scheduling a resumption (1) after 300 seconds (1749595628) in case this run gets aborted
+0000.041 (0) Checking if we have a zip executable available
+0000.042 (0) Testing: /usr/bin/zip
+0000.053 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.055 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.056 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.056 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.057 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.058 (0) Binary zip: error (code: -1)
+0000.059 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test2.html): No such file or directory (line 1958, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.061 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test.html): No such file or directory (line 1957, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.062 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test2.html): No such file or directory (line 1958, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.063 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2): No such file or directory (line 1959, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.064 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1): No such file or directory (line 1960, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.065 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/test.zip): No such file or directory (line 1961, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.066 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest): No such file or directory (line 1962, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.067 (0) Testing: /bin/zip
+0000.076 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.078 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.079 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.080 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.081 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.082 (0) Binary zip: error (code: -1)
+0000.084 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test2.html): No such file or directory (line 1958, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.086 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test.html): No such file or directory (line 1957, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.087 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2/test2.html): No such file or directory (line 1958, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.088 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1/subdir2): No such file or directory (line 1959, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.089 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest/subdir1): No such file or directory (line 1960, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.090 (0) PHP event: code E_WARNING: unlink(/home/lwscvjn/www/wp-content/updraft/binziptest/test.zip): No such file or directory (line 1961, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.091 (0) PHP event: code E_WARNING: rmdir(/home/lwscvjn/www/wp-content/updraft/binziptest): No such file or directory (line 1962, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.093 (0) Creation of backups of directories: beginning
+0000.098 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0004.148 (0) Total entities for the zip file: 1645 directories, 12744 files (0 skipped as non-modified), 150.1 MB
+0004.152 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0.2 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0004.228 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 100 files added (on-disk size: 335 KB)
+0004.245 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 200 files added (on-disk size: 335 KB)
+0004.265 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 300 files added (on-disk size: 335 KB)
+0004.283 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 400 files added (on-disk size: 335 KB)
+0004.301 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 500 files added (on-disk size: 335 KB)
+0004.321 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 600 files added (on-disk size: 335 KB)
+0004.340 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 700 files added (on-disk size: 335 KB)
+0004.361 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 800 files added (on-disk size: 335 KB)
+0004.378 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 900 files added (on-disk size: 335 KB)
+0004.395 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1000 files added (on-disk size: 335 KB)
+0004.397 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.9 MB, 12744 files batched, 1001 (1002) added so far); re-opening (prior size: 335 KB)
+0004.839 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1100 files added (on-disk size: 3967.8 KB)
+0004.859 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1200 files added (on-disk size: 3967.8 KB)
+0004.877 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1300 files added (on-disk size: 3967.8 KB)
+0004.895 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1400 files added (on-disk size: 3967.8 KB)
+0004.915 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1500 files added (on-disk size: 3967.8 KB)
+0004.933 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1600 files added (on-disk size: 3967.8 KB)
+0004.950 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1700 files added (on-disk size: 3967.8 KB)
+0004.967 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1800 files added (on-disk size: 3967.8 KB)
+0004.986 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 1900 files added (on-disk size: 3967.8 KB)
+0005.006 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2000 files added (on-disk size: 3967.8 KB)
+0005.011 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (20.1 MB, 12744 files batched, 1001 (2003) added so far); re-opening (prior size: 3967.8 KB)
+0009.078 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2100 files added (on-disk size: 12682.5 KB)
+0009.098 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2200 files added (on-disk size: 12682.5 KB)
+0009.120 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2300 files added (on-disk size: 12682.5 KB)
+0009.139 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2400 files added (on-disk size: 12682.5 KB)
+0009.157 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2500 files added (on-disk size: 12682.5 KB)
+0009.178 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2600 files added (on-disk size: 12682.5 KB)
+0009.197 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2700 files added (on-disk size: 12682.5 KB)
+0009.214 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2800 files added (on-disk size: 12682.5 KB)
+0009.235 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 2900 files added (on-disk size: 12682.5 KB)
+0009.253 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3000 files added (on-disk size: 12682.5 KB)
+0009.255 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (22.2 MB, 12744 files batched, 1001 (3004) added so far); re-opening (prior size: 12682.5 KB)
+0010.815 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3100 files added (on-disk size: 18701.8 KB)
+0010.834 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3200 files added (on-disk size: 18701.8 KB)
+0010.853 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3300 files added (on-disk size: 18701.8 KB)
+0010.871 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3400 files added (on-disk size: 18701.8 KB)
+0010.889 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3500 files added (on-disk size: 18701.8 KB)
+0010.908 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3600 files added (on-disk size: 18701.8 KB)
+0010.928 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3700 files added (on-disk size: 18701.8 KB)
+0010.946 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3800 files added (on-disk size: 18701.8 KB)
+0010.964 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 3900 files added (on-disk size: 18701.8 KB)
+0010.982 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4000 files added (on-disk size: 18701.8 KB)
+0010.985 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.9 MB, 12744 files batched, 1001 (4005) added so far); re-opening (prior size: 18701.8 KB)
+0011.475 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4100 files added (on-disk size: 20914.3 KB)
+0011.495 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4200 files added (on-disk size: 20914.3 KB)
+0011.515 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4300 files added (on-disk size: 20914.3 KB)
+0011.534 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4400 files added (on-disk size: 20914.3 KB)
+0011.553 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4500 files added (on-disk size: 20914.3 KB)
+0011.570 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4600 files added (on-disk size: 20914.3 KB)
+0011.588 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4700 files added (on-disk size: 20914.3 KB)
+0011.605 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4800 files added (on-disk size: 20914.3 KB)
+0011.622 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 4900 files added (on-disk size: 20914.3 KB)
+0011.640 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5000 files added (on-disk size: 20914.3 KB)
+0011.643 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (16.5 MB, 12744 files batched, 1001 (5006) added so far); re-opening (prior size: 20914.3 KB)
+0013.163 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5100 files added (on-disk size: 26120.1 KB)
+0013.181 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5200 files added (on-disk size: 26120.1 KB)
+0013.199 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5300 files added (on-disk size: 26120.1 KB)
+0013.218 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5400 files added (on-disk size: 26120.1 KB)
+0013.237 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5500 files added (on-disk size: 26120.1 KB)
+0013.255 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5600 files added (on-disk size: 26120.1 KB)
+0013.273 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5700 files added (on-disk size: 26120.1 KB)
+0013.291 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5800 files added (on-disk size: 26120.1 KB)
+0013.311 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 5900 files added (on-disk size: 26120.1 KB)
+0013.329 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6000 files added (on-disk size: 26120.1 KB)
+0013.332 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.2 MB, 12744 files batched, 1001 (6007) added so far); re-opening (prior size: 26120.1 KB)
+0013.693 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6100 files added (on-disk size: 27629.5 KB)
+0013.715 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6200 files added (on-disk size: 27629.5 KB)
+0013.739 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6300 files added (on-disk size: 27629.5 KB)
+0013.757 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6400 files added (on-disk size: 27629.5 KB)
+0013.778 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6500 files added (on-disk size: 27629.5 KB)
+0013.803 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6600 files added (on-disk size: 27629.5 KB)
+0013.825 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6700 files added (on-disk size: 27629.5 KB)
+0013.848 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6800 files added (on-disk size: 27629.5 KB)
+0013.870 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 6900 files added (on-disk size: 27629.5 KB)
+0013.887 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7000 files added (on-disk size: 27629.5 KB)
+0013.890 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (2.4 MB, 12744 files batched, 1001 (7008) added so far); re-opening (prior size: 27629.5 KB)
+0014.187 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7100 files added (on-disk size: 28501.4 KB)
+0014.205 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7200 files added (on-disk size: 28501.4 KB)
+0014.236 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7300 files added (on-disk size: 28501.4 KB)
+0014.256 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7400 files added (on-disk size: 28501.4 KB)
+0014.281 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7500 files added (on-disk size: 28501.4 KB)
+0014.300 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7600 files added (on-disk size: 28501.4 KB)
+0014.319 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7700 files added (on-disk size: 28501.4 KB)
+0014.341 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7800 files added (on-disk size: 28501.4 KB)
+0014.361 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 7900 files added (on-disk size: 28501.4 KB)
+0014.382 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8000 files added (on-disk size: 28501.4 KB)
+0014.388 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.7 MB, 12744 files batched, 1001 (8009) added so far); re-opening (prior size: 28501.4 KB)
+0014.754 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8100 files added (on-disk size: 29782.4 KB)
+0014.775 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8200 files added (on-disk size: 29782.4 KB)
+0014.792 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8300 files added (on-disk size: 29782.4 KB)
+0014.810 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8400 files added (on-disk size: 29782.4 KB)
+0014.829 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8500 files added (on-disk size: 29782.4 KB)
+0014.848 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8600 files added (on-disk size: 29782.4 KB)
+0014.867 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8700 files added (on-disk size: 29782.4 KB)
+0014.885 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8800 files added (on-disk size: 29782.4 KB)
+0014.910 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 8900 files added (on-disk size: 29782.4 KB)
+0014.934 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9000 files added (on-disk size: 29782.4 KB)
+0014.937 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (15.1 MB, 12744 files batched, 1001 (9010) added so far); re-opening (prior size: 29782.4 KB)
+0015.646 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9100 files added (on-disk size: 36896 KB)
+0015.663 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9200 files added (on-disk size: 36896 KB)
+0015.680 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9300 files added (on-disk size: 36896 KB)
+0015.698 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9400 files added (on-disk size: 36896 KB)
+0015.715 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9500 files added (on-disk size: 36896 KB)
+0015.733 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9600 files added (on-disk size: 36896 KB)
+0015.750 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9700 files added (on-disk size: 36896 KB)
+0015.767 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9800 files added (on-disk size: 36896 KB)
+0015.784 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 9900 files added (on-disk size: 36896 KB)
+0015.802 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10000 files added (on-disk size: 36896 KB)
+0015.807 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.5 MB, 12744 files batched, 1001 (10011) added so far); re-opening (prior size: 36896 KB)
+0016.518 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10100 files added (on-disk size: 39827.4 KB)
+0016.535 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10200 files added (on-disk size: 39827.4 KB)
+0016.552 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10300 files added (on-disk size: 39827.4 KB)
+0016.572 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10400 files added (on-disk size: 39827.4 KB)
+0016.590 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10500 files added (on-disk size: 39827.4 KB)
+0016.607 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10600 files added (on-disk size: 39827.4 KB)
+0016.629 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10700 files added (on-disk size: 39827.4 KB)
+0016.647 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10800 files added (on-disk size: 39827.4 KB)
+0016.665 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 10900 files added (on-disk size: 39827.4 KB)
+0016.686 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11000 files added (on-disk size: 39827.4 KB)
+0016.690 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12.4 MB, 12744 files batched, 1001 (11012) added so far); re-opening (prior size: 39827.4 KB)
+0017.567 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11100 files added (on-disk size: 43302.1 KB)
+0017.584 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11200 files added (on-disk size: 43302.1 KB)
+0017.601 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11300 files added (on-disk size: 43302.1 KB)
+0017.618 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11400 files added (on-disk size: 43302.1 KB)
+0017.634 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11500 files added (on-disk size: 43302.1 KB)
+0017.651 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11600 files added (on-disk size: 43302.1 KB)
+0017.667 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11700 files added (on-disk size: 43302.1 KB)
+0017.684 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11800 files added (on-disk size: 43302.1 KB)
+0017.701 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 11900 files added (on-disk size: 43302.1 KB)
+0017.718 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12000 files added (on-disk size: 43302.1 KB)
+0017.721 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (2.9 MB, 12744 files batched, 1001 (12013) added so far); re-opening (prior size: 43302.1 KB)
+0018.213 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12100 files added (on-disk size: 44544.3 KB)
+0018.233 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12200 files added (on-disk size: 44544.3 KB)
+0018.251 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12300 files added (on-disk size: 44544.3 KB)
+0018.269 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12400 files added (on-disk size: 44544.3 KB)
+0018.286 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12500 files added (on-disk size: 44544.3 KB)
+0018.306 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12600 files added (on-disk size: 44544.3 KB)
+0018.325 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.tmp: 12700 files added (on-disk size: 44544.3 KB)
+0018.334 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 12744 files batched, 727 (12740) added so far); re-opening (prior size: 44544.3 KB)
+0020.351 (0) A useful amount of data was added after this amount of zip processing: 2.8 s (normalised: 2.8 s, rate: 9004.3 KB/s)
+0020.354 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.8458940982819, normalised_time=2.8430920457423, max_time=20.35058093071, data points known=1, old_max_bytes=26214400, new_max_bytes=112584100)
+0020.782 (0) Creating zip file manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.list-temp.tmp)
+0020.807 (0) Successfully created zip file manifest (size: 1193477)
+0021.201 (0) Created plugins zip (0) - 53033.9 KB in 21.1 s (2513.6 KB/s) (sha1: 77abade1b9875dce69b285cfb7a5861a099c9d6e, sha256: ea791c85267b6335990676d7f12fa5004fd01758de22c04a632c8729ea37df12)
+0021.213 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0021.214 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-f29687d0a4c7ec42ab826201a1e3259b)
+0022.447 (0) Google Drive: quota usage: used=7302.9 MB, total=15360 MB, available=8057.1 MB
+0022.448 (0) Google Drive: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip: Attempting to upload to Google Drive (into folder id: 13T8RaDujqQArcU6cuwriA6Q223FXxk__)
+0023.181 (0) Googledrive chunked upload: 1.9 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 79.2 / 84)
+0023.332 (0) Googledrive chunked upload: 5.8 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 79.2 / 84)
+0023.529 (0) Googledrive chunked upload: 13.5 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 79.2 / 84)
+0023.758 (0) Googledrive chunked upload: 29 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 79.2 / 84)
+0024.252 (0) Googledrive chunked upload: 59.9 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 79.2 / 84)
+0025.759 (0) Googledrive chunked upload: 100 % uploaded (32505856)
+0025.763 (0) Google Drive: OK: Archive backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip uploaded in 3.31 seconds
+0025.765 (0) Recording as successfully uploaded: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip
+0025.775 (0) Deleting local file: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip: OK
+0025.781 (0) Beginning creation of dump of themes (split every: 400 MB)
+0026.006 (0) Total entities for the zip file: 124 directories, 511 files (0 skipped as non-modified), 11 MB
+0026.026 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0026.045 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0026.063 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0026.080 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0026.097 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0026.557 (0) Creating zip file manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.list-temp.tmp)
+0026.560 (0) Successfully created zip file manifest (size: 35486)
+0026.634 (0) Created themes zip (0) - 9588.2 KB in 0.8 s (11304.6 KB/s) (sha1: 9e273e9731a5fe4046eb7d44ad71f858ca0c4f96, sha256: 8f2dde7aa5fc7866d8bfa754c7afe67155a6bf0608c149fd356d431d77604907)
+0026.639 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0026.640 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-f29687d0a4c7ec42ab826201a1e3259b)
+0026.917 (0) Google Drive: quota usage: used=7354.7 MB, total=15360 MB, available=8005.3 MB
+0026.919 (0) Google Drive: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip: Attempting to upload to Google Drive (into folder id: 13T8RaDujqQArcU6cuwriA6Q223FXxk__)
+0027.503 (0) Googledrive chunked upload: 10.7 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 77.3 / 82)
+0027.635 (0) Googledrive chunked upload: 32 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 77.3 / 82)
+0027.828 (0) Googledrive chunked upload: 74.8 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 77.3 / 82)
+0028.879 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0028.883 (0) Google Drive: OK: Archive backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip uploaded in 1.96 seconds
+0028.884 (0) Recording as successfully uploaded: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip
+0028.888 (0) Deleting local file: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip: OK
+0028.893 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0028.894 (0) Looking for candidates to backup in: /home/lwscvjn/www/wp-content/uploads
+0028.895 (0) finding files: 2024: adding to list (1)
+0028.896 (0) finding files: uag-plugin: adding to list (2)
+0028.897 (0) finding files: smartcrawl: adding to list (3)
+0028.898 (0) finding files: dynamic-mobmenu.css: adding to list (4)
+0028.898 (0) finding files: elementor: adding to list (5)
+0028.899 (0) finding files: wpcf7_uploads: adding to list (6)
+0028.900 (0) finding files: 2025: adding to list (7)
+0028.901 (0) finding files: ast-block-templates-json: adding to list (8)
+0028.902 (0) finding files: wpforms: adding to list (9)
+0028.903 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0029.388 (0) Total entities for the zip file: 28 directories, 1566 files (0 skipped as non-modified), 264.1 MB
+0029.405 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0029.427 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0029.444 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0029.462 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0029.481 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0029.498 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 600 files added (on-disk size: 0 KB)
+0029.502 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 107.4 MB added on this batch (107.5 MB, 1566 files batched, 618 (618) added so far); re-opening (prior size: 0 KB)
+0030.893 (0) A useful amount of data was added after this amount of zip processing: 2.4 s (normalised: 2.4 s, rate: 46077.2 KB/s)
+0030.896 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.3882489204407, normalised_time=2.3861137887897, max_time=30.892474889755, data points known=1, old_max_bytes=112584100, new_max_bytes=209715200)
+0030.928 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 700 files added (on-disk size: 110080.7 KB)
+0030.945 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 800 files added (on-disk size: 110080.7 KB)
+0030.963 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 900 files added (on-disk size: 110080.7 KB)
+0030.981 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1000 files added (on-disk size: 110080.7 KB)
+0030.999 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1100 files added (on-disk size: 110080.7 KB)
+0031.017 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1200 files added (on-disk size: 110080.7 KB)
+0031.035 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1300 files added (on-disk size: 110080.7 KB)
+0031.052 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1400 files added (on-disk size: 110080.7 KB)
+0031.069 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.tmp: 1500 files added (on-disk size: 110080.7 KB)
+0033.695 (0) Creating zip file manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.list-temp.tmp)
+0033.700 (0) Successfully created zip file manifest (size: 93306)
+0035.509 (0) Created uploads zip (0) - 256237.5 KB in 6.6 s (38808.1 KB/s) (sha1: 27df80553fa1f032b0dec656390feebca8ed4f3a, sha256: f6dd5871967474977b03047a42d1d5604639adf6797016d72d9c74946f9041e8)
+0035.514 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0035.515 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-f29687d0a4c7ec42ab826201a1e3259b)
+0035.786 (0) Google Drive: quota usage: used=7364.1 MB, total=15360 MB, available=7995.9 MB
+0035.788 (0) Google Drive: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip: Attempting to upload to Google Drive (into folder id: 13T8RaDujqQArcU6cuwriA6Q223FXxk__)
+0036.728 (0) Googledrive chunked upload: 0.4 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 77.5 / 82)
+0037.922 (0) Googledrive chunked upload: 1.2 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 77.5 / 82)
+0038.433 (0) Googledrive chunked upload: 2.8 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 77.5 / 82)
+0038.845 (0) Googledrive chunked upload: 6 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 77.5 / 82)
+0040.192 (0) Googledrive chunked upload: 12.4 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 77.5 / 82)
+0041.071 (0) Googledrive chunked upload: 25.2 % uploaded (66060288 - increasing chunk size to 65536 KB - memory usage: 77.5 / 82)
+0043.522 (0) Googledrive chunked upload: 50.8 % uploaded (133169152)
+0044.912 (0) Googledrive chunked upload: 76.3 % uploaded (200278016)
+0047.245 (0) Googledrive chunked upload: 100 % uploaded (200278016)
+0047.260 (0) Google Drive: OK: Archive backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip uploaded in 11.47 seconds
+0047.262 (0) Recording as successfully uploaded: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip
+0047.294 (0) Deleting local file: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip: OK
+0047.302 (0) Beginning creation of dump of mu-plugins (split every: 400 MB)
+0047.303 (0) Does not exist: /home/lwscvjn/www/wp-content/mu-plugins
+0047.305 (0) There are no mu-plugins to backup. Will not raise an error.
+0047.306 (0) mu-plugins: create_zip returned an error
+0047.309 (0) Beginning backup of other directories found in the content directory (index: 0)
+0047.310 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0047.311 (0) Looking for candidates to backup in: /home/lwscvjn/www/wp-content
+0047.313 (0) finding files: upgrade-temp-backup: adding to list (1)
+0047.314 (0) finding files: wflogs: adding to list (2)
+0047.316 (0) finding files: uploads: skipping: this is the uploads directory
+0047.318 (0) finding files: updraft: skipping: this is the updraft directory
+0047.319 (0) finding files: plugins: skipping: this is the plugins directory
+0047.321 (0) finding files: themes: skipping: this is the themes directory
+0047.322 (0) finding files: upgrade: skipping: excluded by options
+0047.323 (0) finding files: languages: adding to list (3)
+0047.325 (0) finding files: index.php: adding to list (4)
+0047.326 (0) finding files: cache: skipping: excluded by options
+0047.391 (0) Total entities for the zip file: 5 directories, 205 files (0 skipped as non-modified), 18.1 MB
+0047.408 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0047.425 (0) Zip: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0051.330 (0) Creating zip file manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip.list-temp.tmp)
+0051.333 (0) Successfully created zip file manifest (size: 13033)
+0051.389 (0) Created others zip (0) - 7191.8 KB in 4.1 s (1771.6 KB/s) (sha1: 1b993401d06b353c8c2e7e86422076369ae8836c, sha256: 2acf9f53bb4761d75221cc3cb11843d28118f88d9d82385a2b39e5fc5be1b696)
+0051.393 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0051.394 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-f29687d0a4c7ec42ab826201a1e3259b)
+0051.663 (0) Google Drive: quota usage: used=7614.3 MB, total=15360 MB, available=7745.7 MB
+0051.665 (0) Google Drive: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip: Attempting to upload to Google Drive (into folder id: 13T8RaDujqQArcU6cuwriA6Q223FXxk__)
+0052.321 (0) Googledrive chunked upload: 14.2 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 77.3 / 82)
+0052.504 (0) Googledrive chunked upload: 42.7 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 77.3 / 82)
+0053.189 (0) Googledrive chunked upload: 99.7 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 77.3 / 82)
+0054.294 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0054.301 (0) Google Drive: OK: Archive backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip uploaded in 2.63 seconds
+0054.302 (0) Recording as successfully uploaded: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip
+0054.308 (0) Deleting local file: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip: OK
+0054.318 (0) Saving backup status to database (elements: 8)
+0054.322 (0) Beginning creation of database dump (WordPress DB)
+0054.323 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0054.327 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0054.355 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1549 bytes total)
+0054.357 (0) Binary mysqldump: error (code: -1)
+0054.358 (0) Testing potential mysqldump binary: /bin/mysqldump
+0054.383 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1549 bytes total)
+0054.385 (0) Binary mysqldump: error (code: -1)
+0054.398 (0) Table wp_options: Total expected rows (via COUNT): 648
+0054.429 (0) Table wp_options: Rows added in this batch (next record: 107431): 644 (uncompressed bytes in this segment=1369546) in 0.04 seconds
+0054.437 (0) Table wp_options: finishing file(s) (2, 165.5 KB)
+0054.443 (0) Table wp_users: Total expected rows (via COUNT): 2
+0054.444 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.446 (0) Table wp_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1616) in 0.01 seconds
+0054.451 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0054.457 (0) Table wp_usermeta: Total expected rows (via COUNT): 92
+0054.458 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.461 (0) Table wp_usermeta: Rows added in this batch (next record: 140): 92 (uncompressed bytes in this segment=11509) in 0.01 seconds
+0054.466 (0) Table wp_usermeta: finishing file(s) (2, 4.6 KB)
+0054.474 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0054.476 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.01 seconds
+0054.481 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0054.487 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0054.489 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.491 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2226) in 0.01 seconds
+0054.496 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0054.503 (0) Table wp_links: Total expected rows (via COUNT): 0
+0054.505 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1298) in 0.01 seconds
+0054.513 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0054.526 (0) Table wp_postmeta: Total expected rows (approximate): 4749
+0054.557 (0) Table wp_postmeta: Rows added in this batch (next record: 9512): 4787 (uncompressed bytes in this segment=592421) in 0.04 seconds
+0054.566 (0) Table wp_postmeta: finishing file(s) (2, 82.4 KB)
+0054.575 (0) Table wp_posts: Total expected rows (approximate): 1206
+0054.597 (0) Table wp_posts: Rows added in this batch (next record: 1772): 1240 (uncompressed bytes in this segment=589701) in 0.03 seconds
+0054.605 (0) Table wp_posts: finishing file(s) (2, 64.8 KB)
+0054.612 (0) Table wp_term_relationships: Total expected rows (approximate): 15
+0054.615 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 15 (uncompressed bytes in this segment=881) in 0.01 seconds
+0054.620 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0054.631 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 6
+0054.632 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.636 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=1102) in 0.01 seconds
+0054.647 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0054.655 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0054.658 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=650) in 0.01 seconds
+0054.665 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0054.675 (0) Table wp_terms: Total expected rows (via COUNT): 6
+0054.676 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.683 (0) Table wp_terms: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=867) in 0.01 seconds
+0054.689 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0054.698 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 12
+0054.699 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.700 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 145): 12 (uncompressed bytes in this segment=7121) in 0.01 seconds
+0054.706 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.3 KB)
+0054.711 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0054.713 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=620) in 0.01 seconds
+0054.720 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0054.729 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 3
+0054.730 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.733 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=724) in 0.01 seconds
+0054.738 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0054.745 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 30
+0054.746 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.749 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 52): 30 (uncompressed bytes in this segment=3310) in 0.01 seconds
+0054.754 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 0.7 KB)
+0054.761 (0) Table wp_admin_columns: Total expected rows (via COUNT): 0
+0054.764 (0) Table wp_admin_columns: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=937) in 0.01 seconds
+0054.772 (0) Table wp_admin_columns: finishing file(s) (2, 0.4 KB)
+0054.779 (0) Table wp_e_events: Total expected rows (via COUNT): 7
+0054.780 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.782 (0) Table wp_e_events: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=1968) in 0.01 seconds
+0054.788 (0) Table wp_e_events: finishing file(s) (2, 0.6 KB)
+0054.796 (0) Table wp_litespeed_img_optming: Total expected rows (via COUNT): 0
+0054.798 (0) Table wp_litespeed_img_optming: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=800) in 0.01 seconds
+0054.803 (0) Table wp_litespeed_img_optming: finishing file(s) (2, 0.4 KB)
+0054.811 (0) Table wp_smartcrawl_redirects: Total expected rows (via COUNT): 0
+0054.812 (0) Table wp_smartcrawl_redirects: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=968) in 0.01 seconds
+0054.831 (0) Table wp_smartcrawl_redirects: finishing file(s) (2, 0.4 KB)
+0054.842 (0) Table wp_tf_enquiry_data: Total expected rows (via COUNT): 0
+0054.844 (0) Table wp_tf_enquiry_data: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=863) in 0.01 seconds
+0054.852 (0) Table wp_tf_enquiry_data: finishing file(s) (2, 0.4 KB)
+0054.861 (0) Table wp_tf_order_data: Total expected rows (via COUNT): 0
+0054.863 (0) Table wp_tf_order_data: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1288) in 0.01 seconds
+0054.869 (0) Table wp_tf_order_data: finishing file(s) (2, 0.4 KB)
+0054.875 (0) Table wp_wfauditevents: Total expected rows (via COUNT): 0
+0054.878 (0) Table wp_wfauditevents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=700) in 0.01 seconds
+0054.891 (0) Table wp_wfauditevents: finishing file(s) (2, 0.4 KB)
+0054.897 (0) Table wp_wfblockediplog: Total expected rows (approximate): 895
+0054.901 (0) Table wp_wfblockediplog: Rows added in this batch (next record: 1000): 897 (uncompressed bytes in this segment=57992) in 0.01 seconds
+0054.909 (0) Table wp_wfblockediplog: finishing file(s) (2, 7.6 KB)
+0054.914 (0) Table wp_wfblocks7: Total expected rows (via COUNT): 12
+0054.915 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.918 (0) Table wp_wfblocks7: Rows added in this batch (next record: 7004): 12 (uncompressed bytes in this segment=2453) in 0.01 seconds
+0054.924 (0) Table wp_wfblocks7: finishing file(s) (2, 0.8 KB)
+0054.929 (0) Table wp_wfconfig: Total expected rows (approximate): 279
+0054.966 (0) Table wp_wfconfig: Rows added in this batch (next record: 1000): 283 (uncompressed bytes in this segment=897451) in 0.04 seconds
+0054.974 (0) Table wp_wfconfig: finishing file(s) (2, 450.2 KB)
+0054.981 (0) Table wp_wfcrawlers: Total expected rows (approximate): 1
+0054.983 (0) Table wp_wfcrawlers: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=722) in 0.00 seconds
+0054.990 (0) Table wp_wfcrawlers: finishing file(s) (2, 0.5 KB)
+0054.996 (0) Table wp_wffilechanges: Total expected rows (approximate): 0
+0054.998 (0) Table wp_wffilechanges: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=455) in 0.00 seconds
+0055.003 (0) Table wp_wffilechanges: finishing file(s) (2, 0.3 KB)
+0055.010 (0) Table wp_wffilemods: Total expected rows (approximate): 16366
+0055.337 (0) Table wp_wffilemods: Rows added in this batch (next record: 20000): 15947 (uncompressed bytes in this segment=6043504) in 0.33 seconds
+0055.349 (0) Table wp_wffilemods: finishing file(s) (2, 1701.3 KB)
+0055.357 (0) Table wp_wfhits: Total expected rows (approximate): 1397
+0055.376 (0) Table wp_wfhits: Rows added in this batch (next record: 24659): 1367 (uncompressed bytes in this segment=540387) in 0.02 seconds
+0055.385 (0) Table wp_wfhits: finishing file(s) (2, 45.1 KB)
+0055.391 (0) Table wp_wfhoover: Total expected rows (via COUNT): 0
+0055.392 (0) Table wp_wfhoover: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=475) in 0.00 seconds
+0055.397 (0) Table wp_wfhoover: finishing file(s) (2, 0.3 KB)
+0055.404 (0) Table wp_wfissues: Total expected rows (via COUNT): 5
+0055.405 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.408 (0) Table wp_wfissues: Rows added in this batch (next record: 1647): 5 (uncompressed bytes in this segment=6628) in 0.01 seconds
+0055.416 (0) Table wp_wfissues: finishing file(s) (2, 2 KB)
+0055.423 (0) Table wp_wfknownfilelist: Total expected rows (approximate): 16296
+0055.524 (0) Table wp_wfknownfilelist: Rows added in this batch (next record: 15948): 15948 (uncompressed bytes in this segment=3097783) in 0.10 seconds
+0055.531 (0) Table wp_wfknownfilelist: finishing file(s) (2, 216.6 KB)
+0055.537 (0) Table wp_wflivetraffichuman: Total expected rows (approximate): 0
+0055.539 (0) Table wp_wflivetraffichuman: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=647) in 0.00 seconds
+0055.543 (0) Table wp_wflivetraffichuman: finishing file(s) (2, 0.3 KB)
+0055.549 (0) Table wp_wflocs: Total expected rows (approximate): 0
+0055.551 (0) Table wp_wflocs: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=678) in 0.00 seconds
+0055.557 (0) Table wp_wflocs: finishing file(s) (2, 0.4 KB)
+0055.563 (0) Table wp_wflogins: Total expected rows (approximate): 2018
+0055.585 (0) Table wp_wflogins: Rows added in this batch (next record: 13113): 2004 (uncompressed bytes in this segment=406767) in 0.02 seconds
+0055.591 (0) Table wp_wflogins: finishing file(s) (2, 51.5 KB)
+0055.599 (0) Table wp_wfls_2fa_secrets: Total expected rows (via COUNT): 0
+0055.601 (0) Table wp_wfls_2fa_secrets: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=668) in 0.01 seconds
+0055.605 (0) Table wp_wfls_2fa_secrets: finishing file(s) (2, 0.4 KB)
+0055.611 (0) Table wp_wfls_role_counts: Total expected rows (approximate): 0
+0055.613 (0) Table wp_wfls_role_counts: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=546) in 0.00 seconds
+0055.620 (0) Table wp_wfls_role_counts: finishing file(s) (2, 0.3 KB)
+0055.629 (0) Table wp_wfls_settings: Total expected rows (approximate): 30
+0055.632 (0) Table wp_wfls_settings: Rows added in this batch (next record: 1000): 30 (uncompressed bytes in this segment=2020) in 0.00 seconds
+0055.637 (0) Table wp_wfls_settings: finishing file(s) (2, 0.9 KB)
+0055.642 (0) Table wp_wfnotifications: Total expected rows (approximate): 27
+0055.644 (0) Table wp_wfnotifications: Rows added in this batch (next record: 1000): 27 (uncompressed bytes in this segment=5554) in 0.00 seconds
+0055.649 (0) Table wp_wfnotifications: finishing file(s) (2, 0.9 KB)
+0055.655 (0) Table wp_wfpendingissues: Total expected rows (via COUNT): 0
+0055.657 (0) Table wp_wfpendingissues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=834) in 0.00 seconds
+0055.661 (0) Table wp_wfpendingissues: finishing file(s) (2, 0.4 KB)
+0055.666 (0) Table wp_wfreversecache: Total expected rows (approximate): 0
+0055.668 (0) Table wp_wfreversecache: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=496) in 0.00 seconds
+0055.673 (0) Table wp_wfreversecache: finishing file(s) (2, 0.3 KB)
+0055.679 (0) Table wp_wfsecurityevents: Total expected rows (via COUNT): 0
+0055.681 (0) Table wp_wfsecurityevents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=677) in 0.00 seconds
+0055.686 (0) Table wp_wfsecurityevents: finishing file(s) (2, 0.4 KB)
+0055.692 (0) Table wp_wfsnipcache: Total expected rows (via COUNT): 0
+0055.693 (0) Table wp_wfsnipcache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=713) in 0.00 seconds
+0055.699 (0) Table wp_wfsnipcache: finishing file(s) (2, 0.4 KB)
+0055.707 (0) Table wp_wfstatus: Total expected rows (via COUNT): 943
+0055.714 (0) Table wp_wfstatus: Rows added in this batch (next record: 33813): 943 (uncompressed bytes in this segment=91031) in 0.01 seconds
+0055.719 (0) Table wp_wfstatus: finishing file(s) (2, 13.9 KB)
+0055.725 (0) Table wp_wftrafficrates: Total expected rows (approximate): 0
+0055.726 (0) Table wp_wftrafficrates: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=561) in 0.00 seconds
+0055.732 (0) Table wp_wftrafficrates: finishing file(s) (2, 0.3 KB)
+0055.739 (0) Table wp_wfwaffailures: Total expected rows (via COUNT): 0
+0055.744 (0) Table wp_wfwaffailures: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=522) in 0.01 seconds
+0055.749 (0) Table wp_wfwaffailures: finishing file(s) (2, 0.3 KB)
+0055.757 (0) Table wp_wpforms_logs: Total expected rows (via COUNT): 0
+0055.758 (0) Table wp_wpforms_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=736) in 0.01 seconds
+0055.764 (0) Table wp_wpforms_logs: finishing file(s) (2, 0.4 KB)
+0055.771 (0) Table wp_wpforms_payment_meta: Total expected rows (via COUNT): 0
+0055.774 (0) Table wp_wpforms_payment_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=731) in 0.01 seconds
+0055.781 (0) Table wp_wpforms_payment_meta: finishing file(s) (2, 0.4 KB)
+0055.787 (0) Table wp_wpforms_payments: Total expected rows (via COUNT): 0
+0055.790 (0) Table wp_wpforms_payments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1958) in 0.01 seconds
+0055.795 (0) Table wp_wpforms_payments: finishing file(s) (2, 0.6 KB)
+0055.811 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 8
+0055.813 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.822 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 9): 8 (uncompressed bytes in this segment=1279) in 0.02 seconds
+0055.840 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0055.863 (0) Table wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 0
+0055.869 (0) Table wp_wpmailsmtp_debug_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=700) in 0.02 seconds
+0055.879 (0) Table wp_wpmailsmtp_debug_events: finishing file(s) (2, 0.4 KB)
+0055.886 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 1
+0055.887 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.889 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=762) in 0.01 seconds
+0055.896 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.4 KB)
+0055.906 (0) Table wp_wpsbc_calendar_meta: Total expected rows (via COUNT): 2
+0055.907 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.908 (0) Table wp_wpsbc_calendar_meta: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=861) in 0.01 seconds
+0055.914 (0) Table wp_wpsbc_calendar_meta: finishing file(s) (2, 0.4 KB)
+0055.921 (0) Table wp_wpsbc_calendars: Total expected rows (via COUNT): 1
+0055.922 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.924 (0) Table wp_wpsbc_calendars: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=846) in 0.01 seconds
+0055.930 (0) Table wp_wpsbc_calendars: finishing file(s) (2, 0.5 KB)
+0055.938 (0) Table wp_wpsbc_event_meta: Total expected rows (via COUNT): 0
+0055.941 (0) Table wp_wpsbc_event_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=683) in 0.01 seconds
+0055.946 (0) Table wp_wpsbc_event_meta: finishing file(s) (2, 0.4 KB)
+0055.956 (0) Table wp_wpsbc_events: Total expected rows (via COUNT): 3
+0055.957 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.960 (0) Table wp_wpsbc_events: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=893) in 0.01 seconds
+0055.967 (0) Table wp_wpsbc_events: finishing file(s) (2, 0.5 KB)
+0055.976 (0) Table wp_wpsbc_legend_item_meta: Total expected rows (via COUNT): 87
+0055.978 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.980 (0) Table wp_wpsbc_legend_item_meta: Rows added in this batch (next record: 87): 87 (uncompressed bytes in this segment=4514) in 0.01 seconds
+0055.986 (0) Table wp_wpsbc_legend_item_meta: finishing file(s) (2, 1.6 KB)
+0055.993 (0) Table wp_wpsbc_legend_items: Total expected rows (via COUNT): 5
+0055.996 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.999 (0) Table wp_wpsbc_legend_items: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1157) in 0.01 seconds
+0056.006 (0) Table wp_wpsbc_legend_items: finishing file(s) (2, 0.5 KB)
+0056.007 (0) PHP event: code E_WARNING: filemtime(): stat failed for /home/lwscvjn/www/wp-content/updraft/backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz (line 1923, wp-content/plugins/updraftplus/backup.php)
+0056.009 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_options.table.tmpr107432.gz (1/59/fopen): adding to final database dump
+0056.011 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_options.table.gz (2/59/fopen): adding to final database dump
+0056.012 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_users.table.tmpr3.gz (3/59/fopen): adding to final database dump
+0056.013 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_users.table.gz (4/59/fopen): adding to final database dump
+0056.014 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_usermeta.table.tmpr141.gz (5/59/fopen): adding to final database dump
+0056.015 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_usermeta.table.gz (6/59/fopen): adding to final database dump
+0056.016 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_commentmeta.table.tmpr0.gz (7/59/fopen): adding to final database dump
+0056.017 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_commentmeta.table.gz (8/59/fopen): adding to final database dump
+0056.018 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_comments.table.tmpr2.gz (9/59/fopen): adding to final database dump
+0056.021 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_comments.table.gz (10/59/fopen): adding to final database dump
+0056.022 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_links.table.tmpr0.gz (11/59/fopen): adding to final database dump
+0056.023 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_links.table.gz (12/59/fopen): adding to final database dump
+0056.024 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_postmeta.table.tmpr9513.gz (13/59/fopen): adding to final database dump
+0056.026 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_postmeta.table.gz (14/59/fopen): adding to final database dump
+0056.027 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_posts.table.tmpr1773.gz (15/59/fopen): adding to final database dump
+0056.029 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_posts.table.gz (16/59/fopen): adding to final database dump
+0056.030 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_term_relationships.table.tmpr100001.gz (17/59/fopen): adding to final database dump
+0056.031 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_term_relationships.table.gz (18/59/fopen): adding to final database dump
+0056.032 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_term_taxonomy.table.tmpr8.gz (19/59/fopen): adding to final database dump
+0056.034 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_term_taxonomy.table.gz (20/59/fopen): adding to final database dump
+0056.035 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_termmeta.table.tmpr0.gz (21/59/fopen): adding to final database dump
+0056.036 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_termmeta.table.gz (22/59/fopen): adding to final database dump
+0056.037 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_terms.table.tmpr8.gz (23/59/fopen): adding to final database dump
+0056.038 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_terms.table.gz (24/59/fopen): adding to final database dump
+0056.039 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_actions.table.tmpr146.gz (25/59/fopen): adding to final database dump
+0056.043 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_actions.table.gz (26/59/fopen): adding to final database dump
+0056.044 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_claims.table.tmpr0.gz (27/59/fopen): adding to final database dump
+0056.045 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_claims.table.gz (28/59/fopen): adding to final database dump
+0056.046 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_groups.table.tmpr4.gz (29/59/fopen): adding to final database dump
+0056.047 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_groups.table.gz (30/59/fopen): adding to final database dump
+0056.048 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_logs.table.tmpr53.gz (31/59/fopen): adding to final database dump
+0056.049 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_actionscheduler_logs.table.gz (32/59/fopen): adding to final database dump
+0056.050 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_admin_columns.table.tmpr0.gz (33/59/fopen): adding to final database dump
+0056.051 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_admin_columns.table.gz (34/59/fopen): adding to final database dump
+0056.057 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_e_events.table.tmpr8.gz (35/59/fopen): adding to final database dump
+0056.058 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_e_events.table.gz (36/59/fopen): adding to final database dump
+0056.059 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_litespeed_img_optming.table.tmpr0.gz (37/59/fopen): adding to final database dump
+0056.060 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_litespeed_img_optming.table.gz (38/59/fopen): adding to final database dump
+0056.061 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_smartcrawl_redirects.table.tmpr0.gz (39/59/fopen): adding to final database dump
+0056.062 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_smartcrawl_redirects.table.gz (40/59/fopen): adding to final database dump
+0056.063 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_tf_enquiry_data.table.tmpr0.gz (41/59/fopen): adding to final database dump
+0056.065 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_tf_enquiry_data.table.gz (42/59/fopen): adding to final database dump
+0056.066 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_tf_order_data.table.tmpr0.gz (43/59/fopen): adding to final database dump
+0056.067 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_tf_order_data.table.gz (44/59/fopen): adding to final database dump
+0056.070 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfauditevents.table.tmpr0.gz (45/59/fopen): adding to final database dump
+0056.072 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfauditevents.table.gz (46/59/fopen): adding to final database dump
+0056.073 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfblockediplog.table.tmpr1001.gz (47/59/fopen): adding to final database dump
+0056.074 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfblockediplog.table.gz (48/59/fopen): adding to final database dump
+0056.075 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfblocks7.table.tmpr7005.gz (49/59/fopen): adding to final database dump
+0056.077 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfblocks7.table.gz (50/59/fopen): adding to final database dump
+0056.078 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfconfig.table.tmpr1001.gz (51/59/fopen): adding to final database dump
+0056.082 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfconfig.table.gz (52/59/fopen): adding to final database dump
+0056.084 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfcrawlers.table.tmpr1001.gz (53/59/fopen): adding to final database dump
+0056.086 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfcrawlers.table.gz (54/59/fopen): adding to final database dump
+0056.089 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wffilechanges.table.tmpr1.gz (55/59/fopen): adding to final database dump
+0056.091 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wffilechanges.table.gz (56/59/fopen): adding to final database dump
+0056.093 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wffilemods.table.tmpr20001.gz (57/59/fopen): adding to final database dump
+0056.106 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wffilemods.table.gz (58/59/fopen): adding to final database dump
+0056.108 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfhits.table.tmpr24660.gz (59/59/fopen): adding to final database dump
+0056.110 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfhits.table.gz (60/59/fopen): adding to final database dump
+0056.110 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfhoover.table.tmpr0.gz (61/59/fopen): adding to final database dump
+0056.111 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfhoover.table.gz (62/59/fopen): adding to final database dump
+0056.113 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfissues.table.tmpr1648.gz (63/59/fopen): adding to final database dump
+0056.114 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfissues.table.gz (64/59/fopen): adding to final database dump
+0056.115 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfknownfilelist.table.tmpr15949.gz (65/59/fopen): adding to final database dump
+0056.118 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfknownfilelist.table.gz (66/59/fopen): adding to final database dump
+0056.119 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflivetraffichuman.table.tmpr1.gz (67/59/fopen): adding to final database dump
+0056.120 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflivetraffichuman.table.gz (68/59/fopen): adding to final database dump
+0056.121 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflocs.table.tmpr1.gz (69/59/fopen): adding to final database dump
+0056.122 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflocs.table.gz (70/59/fopen): adding to final database dump
+0056.123 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflogins.table.tmpr13114.gz (71/59/fopen): adding to final database dump
+0056.125 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wflogins.table.gz (72/59/fopen): adding to final database dump
+0056.126 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_2fa_secrets.table.tmpr0.gz (73/59/fopen): adding to final database dump
+0056.127 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_2fa_secrets.table.gz (74/59/fopen): adding to final database dump
+0056.128 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_role_counts.table.tmpr1.gz (75/59/fopen): adding to final database dump
+0056.129 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_role_counts.table.gz (76/59/fopen): adding to final database dump
+0056.130 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_settings.table.tmpr1001.gz (77/59/fopen): adding to final database dump
+0056.131 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfls_settings.table.gz (78/59/fopen): adding to final database dump
+0056.132 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfnotifications.table.tmpr1001.gz (79/59/fopen): adding to final database dump
+0056.133 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfnotifications.table.gz (80/59/fopen): adding to final database dump
+0056.134 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfpendingissues.table.tmpr0.gz (81/59/fopen): adding to final database dump
+0056.135 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfpendingissues.table.gz (82/59/fopen): adding to final database dump
+0056.135 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfreversecache.table.tmpr1.gz (83/59/fopen): adding to final database dump
+0056.138 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfreversecache.table.gz (84/59/fopen): adding to final database dump
+0056.139 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfsecurityevents.table.tmpr0.gz (85/59/fopen): adding to final database dump
+0056.141 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfsecurityevents.table.gz (86/59/fopen): adding to final database dump
+0056.142 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfsnipcache.table.tmpr0.gz (87/59/fopen): adding to final database dump
+0056.143 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfsnipcache.table.gz (88/59/fopen): adding to final database dump
+0056.144 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfstatus.table.tmpr33814.gz (89/59/fopen): adding to final database dump
+0056.145 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfstatus.table.gz (90/59/fopen): adding to final database dump
+0056.146 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wftrafficrates.table.tmpr1.gz (91/59/fopen): adding to final database dump
+0056.147 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wftrafficrates.table.gz (92/59/fopen): adding to final database dump
+0056.148 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfwaffailures.table.tmpr0.gz (93/59/fopen): adding to final database dump
+0056.149 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wfwaffailures.table.gz (94/59/fopen): adding to final database dump
+0056.150 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_logs.table.tmpr0.gz (95/59/fopen): adding to final database dump
+0056.151 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_logs.table.gz (96/59/fopen): adding to final database dump
+0056.152 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_payment_meta.table.tmpr0.gz (97/59/fopen): adding to final database dump
+0056.153 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_payment_meta.table.gz (98/59/fopen): adding to final database dump
+0056.154 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_payments.table.tmpr0.gz (99/59/fopen): adding to final database dump
+0056.157 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_payments.table.gz (100/59/fopen): adding to final database dump
+0056.157 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_tasks_meta.table.tmpr10.gz (101/59/fopen): adding to final database dump
+0056.158 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpforms_tasks_meta.table.gz (102/59/fopen): adding to final database dump
+0056.159 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpmailsmtp_debug_events.table.tmpr0.gz (103/59/fopen): adding to final database dump
+0056.160 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpmailsmtp_debug_events.table.gz (104/59/fopen): adding to final database dump
+0056.162 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr2.gz (105/59/fopen): adding to final database dump
+0056.163 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpmailsmtp_tasks_meta.table.gz (106/59/fopen): adding to final database dump
+0056.164 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_calendar_meta.table.tmpr3.gz (107/59/fopen): adding to final database dump
+0056.165 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_calendar_meta.table.gz (108/59/fopen): adding to final database dump
+0056.166 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_calendars.table.tmpr2.gz (109/59/fopen): adding to final database dump
+0056.167 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_calendars.table.gz (110/59/fopen): adding to final database dump
+0056.168 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_event_meta.table.tmpr0.gz (111/59/fopen): adding to final database dump
+0056.169 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_event_meta.table.gz (112/59/fopen): adding to final database dump
+0056.170 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_events.table.tmpr4.gz (113/59/fopen): adding to final database dump
+0056.171 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_events.table.gz (114/59/fopen): adding to final database dump
+0056.178 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_legend_item_meta.table.tmpr88.gz (115/59/fopen): adding to final database dump
+0056.179 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_legend_item_meta.table.gz (116/59/fopen): adding to final database dump
+0056.180 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_legend_items.table.tmpr6.gz (117/59/fopen): adding to final database dump
+0056.181 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db-table-wp_wpsbc_legend_items.table.gz (118/59/fopen): adding to final database dump
+0056.190 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz: finished writing out complete database file (2828.9 KB)
+0056.241 (0) Total database tables backed up: 59 (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz, size: 2896923, sha1: 3bfc54c7168bbbaeb883ab50417b8414153e69e5, sha256: 805e4e7c47f87fd27f20e14adbaa583219a63edc48d9dd9a3a02609c98c41927)
+0056.248 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip: plugins: This file has already been successfully uploaded
+0056.249 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip: themes: This file has already been successfully uploaded
+0056.250 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip: uploads: This file has already been successfully uploaded
+0056.251 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip: others: This file has already been successfully uploaded
+0056.252 (0) backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz: db: This file has not yet been successfully uploaded: will queue
+0056.252 (0) Saving backup history. Total backup size: 321.2 MB
+0056.255 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0056.259 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0056.262 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-f29687d0a4c7ec42ab826201a1e3259b)
+0056.562 (0) Google Drive: quota usage: used=7621.4 MB, total=15360 MB, available=7738.6 MB
+0056.565 (0) Google Drive: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz: Attempting to upload to Google Drive (into folder id: 13T8RaDujqQArcU6cuwriA6Q223FXxk__)
+0057.167 (0) Googledrive chunked upload: 36.2 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 77.4 / 94)
+0058.207 (0) Googledrive chunked upload: 100 % uploaded (1048576)
+0058.210 (0) Google Drive: OK: Archive backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz uploaded in 1.64 seconds
+0058.211 (0) Recording as successfully uploaded: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz
+0058.214 (0) Deleting local file: backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-db.gz: OK
+0058.217 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0058.218 (0) Number of backup sets in history: 3; groups (db): 1
+0058.219 (0) Examining (for databases) backup set with group_id=0, nonce=e29ef4320f54, datestamp=1749595328 (Jun 10 2025 22:42:08)
+0058.220 (0) This backup set is the backup set just made, so will not be deleted.
+0058.220 (0) Examining (for databases) backup set with group_id=0, nonce=f0b08811fe76, datestamp=1748990490 (Jun 03 2025 22:41:30)
+0058.220 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0058.221 (0) Examining (for databases) backup set with group_id=0, nonce=696c9bc41072, datestamp=1748385566 (May 27 2025 22:39:26)
+0058.221 (0) 1748385566: db: this set includes a database (backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-db.gz); db count is now 2
+0058.221 (0) 1748385566: db: over retain limit (2); will delete this database
+0060.516 (0) Google Drive: backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-db.gz: Deletion successful
+0060.522 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0060.523 (0) Number of backup sets in history: 3; groups (files): 1
+0060.524 (0) Examining (for files) backup set with nonce=e29ef4320f54, datestamp=1749595328 (Jun 10 2025 22:42:08)
+0060.524 (0) This backup set is the backup set just made, so will not be deleted.
+0060.525 (0) This backup set is the backup set just made, so will not be deleted.
+0060.525 (0) This backup set is the backup set just made, so will not be deleted.
+0060.525 (0) This backup set is the backup set just made, so will not be deleted.
+0060.525 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0060.526 (0) Examining (for files) backup set with nonce=f0b08811fe76, datestamp=1748990490 (Jun 03 2025 22:41:30)
+0060.526 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0060.526 (0) Examining (for files) backup set with nonce=696c9bc41072, datestamp=1748385566 (May 27 2025 22:39:26)
+0060.526 (0) plugins: over retain limit (2); will delete this file entity
+0060.526 (0) themes: over retain limit (2); will delete this file entity
+0060.526 (0) uploads: over retain limit (2); will delete this file entity
+0060.526 (0) others: over retain limit (2); will delete this file entity
+0061.960 (0) Google Drive: backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-others.zip: Deletion successful
+0062.507 (0) Google Drive: backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-uploads.zip: Deletion successful
+0063.245 (0) Google Drive: backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-themes.zip: Deletion successful
+0063.768 (0) Google Drive: backup_2025-05-28-0039_Chteau_de_Taulignan_696c9bc41072-plugins.zip: Deletion successful
+0063.775 (0) This backup set is now empty; will remove from history
+0063.777 (0) Deleting log file (log.696c9bc41072.txt)
+0063.778 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0063.783 (0) Resume backup (e29ef4320f54, 0): finish run
+0063.787 (0) Decremented the semaphore (fd) by 1
+0063.789 (0) Semaphore (fd) unlocked
+0063.790 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0063.795 (0) The backup succeeded and is now complete
+0063.796 (0) Deleting zip manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-plugins.zip.list.tmp)
+0063.798 (0) Deleting zip manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-themes.zip.list.tmp)
+0063.799 (0) Deleting zip manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-uploads.zip.list.tmp)
+0063.800 (0) Deleting zip manifest (backup_2025-06-11-0042_Chteau_de_Taulignan_e29ef4320f54-others.zip.list.tmp)
+0063.801 (0) No email will/can be sent - the user has not configured an email address.
+0063.802 (0) La sauvegarde a réussi et est maintenant terminée

@@ -1,0 +1,962 @@
+/*
+Theme Name: Taulignan
+Description: Child theme for the Frost theme
+Author: Nelly Babillon
+Author URI: https://nellybabillon.fr/
+Template: frost
+Version: 1.0
+*/
+
+
+/* Normalize */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url("layout.css");
+@import url("menu.css");
+@import url("media-queries.css");
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #6B764C;
+    --secondary-color: #6c757d;
+    /* Color styles */
+    --primary: hsla(72, 18.5%, 21.2%, 1);
+    --info: hsla(35, 87.9%, 45.3%, 1);
+    --beige: #EEE9DD;
+    --primary: hsla(197, 100%, 21.6%, 1);
+    --secondary: hsla(359, 25.2%, 45.1%, 1);
+    --light: hsla(229, 16%, 80.4%, 1);
+    --pink: hsla(13, 92.7%, 89.2%, 1);
+    --bordeau:#593B3B;
+
+    --Lavande-fonce: #8A7895;
+    --Lavande: #B69ABB;
+    --lavande-light: #E5DAE6;
+    --olive-fonce: #4b5331;
+    --Olive: #6B764C;
+    --Pink-medium: #C8A2A3;
+    --Turquoise: #05F1C4;
+    --Vert-sapin: #125A51;
+    --Violet-fonce: #6E5B7C;
+    --bleu-800: #F9F9FB;
+    /* Text-size styles */
+    --titre-h1: 9vw;
+    --titre-h2: 3.125rem;
+    --p: 1.25rem;
+    --maghfira: 'Maghfira', sans-serif;
+    --titre-h2: 50px;
+    /* Width */
+    --max-300:300px;
+    --max-450:450px;
+    --max-w-60:60%;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Maghfira';
+    src: url('fonts/Maghfirea.otf') format('opentype');
+}
+
+/* Typography */
+body {
+    font-family: 'Bellota', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* body *{
+    border:1px solid blue;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--titre-h1);
+    font-weight: 300;
+    font-family: var(--maghfira);
+    line-height: 1em;
+}
+
+li{
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Layout */
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1 0 auto;
+    min-height: 100vh;
+    font-family: 'Bellota', sans-serif;
+}
+
+body[data-status="loading"]{
+    overflow: hidden;
+    height: 100vh;
+}
+
+body[data-status="finished"]{
+    overflow: inherit;
+    height: auto;
+}
+
+body[data-status="finished"] .loading-screen{
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.contained{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fullwidth{
+    width: 100%;
+}
+
+.fullheight{
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* Colors */
+.bg-olive{
+    background-color: var(--Olive);
+}
+
+.bg-beige{
+    background-color: var(--beige);
+}
+
+/* Homepage */
+
+.home-template section{
+    height: 100%;
+    min-height: calc(100vh - 20rem);
+    padding: 10rem 5rem;
+}
+
+#hero-banner{
+    color:var(--beige);
+    background: url('img/banner.jpg'), rgba(255,255,255,0.2);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center,center;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title-wrapper{
+    max-width: 600px;
+    width: 100%;
+    min-width: 300px;
+}
+/* Presentation */
+#presentation{
+    color:var(--beige);
+    position:relative;
+    justify-content: center;
+}
+
+#presentation .title-block-wrapper,
+#presentation p{
+    position: relative;
+    z-index: 2;
+}
+
+#presentation .title-block-wrapper{
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.title-block-wrapper h1{
+    transform: translateY(300px);
+}
+
+.history-title-block .title-block-wrapper:nth-child(2),
+.history-title-block .title-block-wrapper:nth-child(3){
+    margin-left: 25em;
+    padding-top:2em;
+}
+
+.history-title-block .title-block-wrapper:nth-child(2)::before,
+.history-title-block .title-block-wrapper:nth-child(3)::before{
+    content:'';
+    display: block;
+    height: 1px;
+    width: 2em;
+    background-color: var(--beige);
+    position: absolute;
+    top:1em;
+}
+
+#presentation .absolute{
+    z-index: 0;
+    width: 50%;
+}
+
+#presentation p{
+    text-align: justify;
+    max-width: var(--max-450);
+    margin-top:2.5em;
+    right:5%;
+    align-self: flex-end;
+}
+/* Images flottantes */
+#img-detail01{
+    /* top: 10em; */
+    left: -9em;
+}
+
+#img-detail02{
+    /* top: -4rem; */
+    right: 15vw;
+    align-self: flex-end;
+    margin-bottom: 4rem;
+}
+
+#img-detail04{
+    right: 4vw;
+    align-self: flex-end; 
+}
+
+/* Histoire */
+
+#histoire{
+    background-color: var(--beige);
+    color: var(--primary-color);
+    padding: 5rem;
+}
+
+#histoire .block-title{
+    left: 36vw;
+    margin-bottom: -2em;
+    z-index: 2;
+    margin-right: 5em;
+}
+
+#histoire .title-block-wrapper{
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.title-block-wrapper h1{
+    transform: translateY(300px);
+}
+
+#histoire #block-txt:before{
+    content:'';
+    display: block;
+    height:1px;
+    width: 20%;
+    background-color: var(--primary);
+    margin-bottom: 1em;
+}
+
+#histoire #block-txt{
+    right: 0;
+    top:40%;
+    bottom:auto;
+    margin-right: 5em;
+    max-width: var(--max-450);
+}
+
+#eglise{
+    padding-bottom: 5em;
+}
+
+#embleme{
+    left: -13em;
+    margin-bottom: 6em;
+    align-self: flex-end;
+    top: 2em;
+}
+
+#histoire p{
+    text-align: justify;
+    max-width: var(--max-450);
+}
+/* Chambres d'hotes */
+
+#chambres-hotes {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color:var(--Lavande-fonce)
+}
+
+#chambres-hotes > div:first-child{
+    margin-bottom: 2em;
+}
+
+.thmb-chambre{
+    width: 100%;
+    min-width: 50px;
+    max-width: calc(100% / 5);
+    max-height: 900px;
+    height: auto;
+    flex-grow: 2;
+    box-sizing: border-box;
+    min-height: 80vh;
+}
+
+.thmb-chambre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#chambres-hotes p{
+    text-align: center;
+    max-width: var(--max-w-80);
+}
+
+#chambres-hotes .button-wrapper{
+    width: 100%;
+    justify-content: center;
+}
+
+/* Mariages */
+
+#mariages{
+    background-color: var(--beige);
+    color: var(--primary-color);
+    margin-top: 5em;
+    padding-bottom: 2em;
+}
+
+#mariages div:not(.img-wrapper){
+    z-index: 3;
+    position:relative;
+}
+
+#mariages .block-title{
+    color: var(--beige);
+    /* bottom: 35vh; */
+    margin-left: 5em;
+    z-index: 2;
+    right: 0;
+}
+
+#mariages .block-title{
+    left: 0;
+    margin-bottom: -2em;
+    z-index: 2;
+    margin-right: 5em;
+}
+
+#mariages .title-block-wrapper{
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+#mariages .block-title h1{
+    font-size: 5em;
+    transform: translateY(200%);
+}
+
+#mariages .img-wrapper{
+    width: 90%;
+    height: 110%;
+    left: 5%;
+    right: 5%;
+    top: -5%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#mariages .img-wrapper img{
+    height: 100%;
+    position: relative;
+}
+
+#mariages .img-wrapper:after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--beige);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#mariages #block-txt{
+    max-width: var(--max-450);
+    margin-right: 5em;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+/* Séminaires */
+
+#seminaires{
+    padding: 0;
+    margin:5em 0 0 0;
+}
+
+#seminaires .banner{
+    /* width: 100%; */
+    padding: 5em;
+    position: relative;
+    height: max-content;
+    min-height: 90vh;
+    justify-content: flex-start;
+    background: url('img/piscine-02.jpg');
+    /* background-blend-mode: saturation; */
+    background-position: center, center;
+    background-size: cover;
+}
+
+#seminaires .banner::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    filter:opacity(0.4);
+    background-color: rgba(0,0,0,0.5);
+  }
+
+#seminaires .banner .block-title{
+    z-index: 5;
+    max-width: 80%;
+    color: white;
+    bottom: 0;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+#seminaires .block-title::after{
+    content:'';
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 2em;
+}
+
+#seminaires .banner .block-title h1{
+    font-size: 7vw;
+}
+
+#seminaires #block-txt{
+    z-index: 5;
+    max-width: var(--max-450);
+    margin-right: 5em;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+/* Activités */
+
+#activites{
+    background-color: var(--lavande-light);
+    color: var(--Violet-fonce);
+}
+
+#activites .block-title{
+    margin-top:3em;
+    margin-bottom: -3em;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+#activites #block-txt{
+    max-width: var(--max-450);
+    align-self: center;
+}
+
+#activites #block-txt::before{
+    content: '';
+    display: block;
+    width: 20%;
+    height: 1px;
+    margin-bottom: 2em;
+    background-color: var(--Violet-fonce);
+}
+
+#activites #activite-01{
+  margin-right: -4em;
+  margin-left: 4em;
+  margin-bottom: 2em;
+  max-width: 300px;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  z-index: 5;
+}
+
+#activite-02 img{
+    object-fit: cover;
+    height: 100%!important;
+    width: 100%;
+}
+
+/* Header */
+header {
+    max-height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom:var(--border-w-1) solid var(--secondary-color);
+}
+
+.logo {
+    flex: 1;
+    font-family: 'Maghfira', serif;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+    text-align: right;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    overflow: hidden;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    position: relative;
+}
+
+nav ul li::after{
+    content: '';
+    display: block;
+    z-index: -1;
+    width: 100%;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.4s ease-in-out all;
+    height: 100%;
+    position:absolute;
+    background-color: var(--beige);
+    top:0;
+    left: 0;
+}
+
+nav ul li:hover::after{
+    transform: scaleX(1);
+}
+
+nav ul li a {
+    display: block;
+    /* transform: translateY(0); */
+    transition: 0.3s ease-in-out all;
+}
+
+nav .line-menu {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 2em;
+    left: 0;
+    overflow: hidden;
+    width: 0px;
+}
+
+nav .line-menu path {
+    width: 100%;
+}   
+
+nav .line-menu line{
+    color: var(--bordeau);
+}
+
+nav li,
+nav button{
+    font-size: 0.9em!important;
+}
+
+nav button{
+    padding: 8px 15px;
+}
+
+/* Footer */
+
+#contact{
+    height: auto;
+    padding: 5em;
+    align-self: flex-end;
+    border-top:2px solid var(--secondary);
+    color:var(--secondary);
+}
+
+#contact .contained{
+    max-width: 80%;
+    text-align: center;
+}
+
+#contact h2{
+    font-size:3em;
+    max-width: 80%;
+    margin:0 auto;
+    font-weight: 300;
+    font-family: 'Maghfira', sans-serif;
+}
+
+#contact p{
+    font-weight: 300;
+}
+
+footer {
+    background-color: var(--bordeau);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Media */
+img{
+    width: 100%;
+    height: auto;
+}
+
+.img-container,
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover{
+    background-size: cover;
+    background-position: center;
+}
+
+.tiles-wrapper{
+    display: grid;
+    grid-template-columns: minmax(300px, 2fr) minmax(300px, 1fr);
+    grid-template-rows: 1fr 1fr;
+    /* gap:10px; */
+}
+
+.tiles-wrapper .img-wrapper:first-child{
+    grid-column: span 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+}
+
+.tiles-wrapper .img-wrapper:nth-child(2){
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.tiles-wrapper .img-wrapper:nth-child(3){
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    object-position: right;
+}
+
+.tiles-wrapper .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-circle-container{
+    overflow: hidden;
+    border-radius:100%;
+    aspect-ratio: 1/1;
+}
+
+.small-size{
+    max-width: 300px;
+    width: 100%;
+}
+
+.medium-size{
+    max-width: 500px;
+    width: 100%;
+}
+
+.large-size{
+    max-width: 700px;
+    width: 100%;
+}
+
+.icon-small{
+    width: 30px;
+}
+
+.icon-medium{
+    width: 50px;
+}
+
+.icon-large{
+    width: 80px;
+}
+
+.parallax{
+    margin-bottom: 5em;
+    margin-top: 4em;
+}
+
+/* Loading */
+.loading-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: var(--Olive);
+}
+
+.loading-wrapper{
+    max-width: 50%;
+    width: 100%;
+}
+
+.loading-bar{
+    height: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid var(--olive-fonce);
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+.progress-bar{
+    height: inherit;
+    width: 100%;
+    background-color: var(--olive-fonce);
+    border-radius: 3px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: 3;
+}
+
+.percent{
+    font-size: 12vw;
+    color: var(--olive-fonce);
+    margin: 0;
+    width: fit-content;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .header,
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+
+    header nav > ul:first-child{
+        display: none;
+    }
+    
+    .home-template section{
+        min-height: 80vh;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .img-wrapper{
+        width:100%;
+        margin:0 auto;
+        position:relative;
+        left:0;
+        right:0;
+    }
+    
+    #img-detail01, #img-detail02, #img-detail03, #img-detail04
+    {
+        right: 0;
+        left: 0;
+        align-self: center;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        transform:inherit;
+        margin:0 auto;
+    }
+
+    #histoire {
+        padding: 0rem;
+    }
+
+    #embleme {
+        left: 0;
+        margin-top: 31em;
+        align-self: flex-end;
+      }
+
+    .home-template section p,
+    .home-template section div:not(.icon-wrapper) {
+        /*! margin-left: 0; */
+        /*! margin-right: 0; */
+        width: 100%;
+        box-sizing: content-box;
+    }
+
+    .img-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .history-title-block h1:nth-child(2), 
+    .history-title-block h1:nth-child(3) {
+        margin-left: 0em;
+        width: 100%;
+      }
+
+    #histoire .block-title {
+        left: 0;
+        margin-bottom: -2em;
+        margin-right: 0;
+    }
+
+    #histoire #block-txt {
+        top: 40%;
+        bottom: auto;
+        margin-right: 0em;
+      }
+
+    #presentation p {
+        margin-top: inherit;
+        right: inherit;
+        align-self: inherit;
+    }
+
+    #chambres-hotes .flex{
+        justify-content: center;
+        padding: 0 1em;
+    }
+    
+    #mariages *,
+    #histoire *,
+    #presentation *{
+        width: 100%;
+        margin-left: inherit;
+        margin-right: inherit;
+        align-self: inherit;
+    }
+    
+    #mariages .block-title {
+        color: var(--beige);
+        bottom: inherit;
+        margin-left: inherit;
+        margin-right: inherit;
+        z-index: 2;
+        right: inherit;
+    }
+    
+    #mariages .block-title h1{
+        font-size: 5em;
+        transform: translateY(0)!important;
+    }
+
+    #mariages #block-txt {
+        margin-right: inherit;
+        max-width: 100%;
+        align-self: inherit;
+    }
+
+    #mariages .img-wrapper {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: -5%;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    #mariages .img-wrapper img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+      #seminaires .banner {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        height: max-content;
+        min-height: 90vh;
+        justify-content: flex-start;
+      }
+    
+      .tiles-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section div{
+        margin:inherit 10px;
+    }
+
+    .block-title{
+        position: relative;
+        margin: 0 10px;
+    }
+
+    .title-block-wrapper h1 {
+        transform: translateY(0px)!important;
+      }
+
+    .absolute{
+        position: relative;
+    }
+
+    /* .tiles-wrapper .img-wrapper:first-child {
+        grid-column: span 1;
+        grid-row: 1 / span 1;
+    } */
+}
