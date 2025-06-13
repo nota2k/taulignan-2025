@@ -26,10 +26,12 @@ Thumbs.db
 .vscode/
 
 # Plugins and themes
-wp-content/plugins/
-wp-content/themes/
+# wp-content/plugins/
+# wp-content/themes/
 wp-content/uploads/
 
 # Cache files
 wp-content/cache/
 wp-content/upgrade/
+wp-content/updraft/
+wp-content/languages/
