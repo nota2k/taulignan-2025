@@ -1,0 +1,29 @@
+name: Deploy WordPress Theme with WPPush
+
+on:
+  push:
+    paths:
+      - 'wp-content/themes/taulignan-u-child/**'
+    branches:
+      - main  # ou 'master', selon ta branche
+
+jobs:
+  deploy:
+    name: Deploy Theme to WordPress
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Zip theme directory
+        run: |
+          cd wp-content/themes/taulignan-u-child
+          zip -r ../../../../taulignan-u-child.zip .
+
+      - name: Deploy to WordPress via WPPush
+        run: |
+          curl -X POST https://wppush.io/api/deploy \
+            -H "Authorization: Bearer ${{ secrets.WPPUSH_API_KEY }}" \
+            -F "theme_id=${{ secrets.WPPUSH_THEME_ID }}" \
+            -F "file=@theme.zip"
