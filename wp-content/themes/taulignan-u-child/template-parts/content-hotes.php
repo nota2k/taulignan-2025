@@ -29,7 +29,7 @@
 
 
 			<section class="chambre flex gap-2">
-				<div class="carousel-wrapper">
+				<!-- <div class="carousel-wrapper">
 
 					<div class="carousel-slider">
 						<div class="carousel-item item-1">
@@ -42,6 +42,23 @@
 							<img src="<?php echo esc_url($room['image_3']); ?>" alt="" />
 						</div>
 						<div class="carousel-item item-4">
+							<img src="<?php echo esc_url($room['image_4']); ?>" alt="" />
+						</div>
+					</div>
+				</div> -->
+				<div class="gallery-wrapper">
+
+					<div class="grid-gallery">
+						<div class="minigallery-item item-1" style="grid-column: span 3;">
+							<img src="<?php echo esc_url($room['image_1']); ?>" alt="" />
+						</div>
+						<div class="minigallery-item item-2" style="grid-column: span 2;">
+							<img src="<?php echo esc_url($room['image_2']); ?>" alt="" />
+						</div>
+						<div class="minigallery-item item-3" style="grid-column: span 2;">
+							<img src="<?php echo esc_url($room['image_3']); ?>" alt="" />
+						</div>
+						<div class="minigallery-item item-4" style="grid-column: span 3;">
 							<img src="<?php echo esc_url($room['image_4']); ?>" alt="" />
 						</div>
 					</div>

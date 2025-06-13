@@ -4,7 +4,7 @@ console.log("🏰");
 
 // Titres révélés au scroll
 const blockTitle = document.querySelectorAll(".title-block-wrapper");
-console.log(blockTitle);
+// console.log(blockTitle);
 // Animation de la page d'accueil
 
 // Titres révélés au scroll
@@ -60,6 +60,7 @@ window.addEventListener("scroll", function () {
     // Si la media query correspond (c'est-à-dire si la largeur de la fenêtre est inférieure à 600px), on désactive l'animation
     return;
   }
+  else{
   parallaxDiv.forEach((element) => {
     let speed = element.getAttribute("data-speed");
     let elH = element.clientHeight / 2;
@@ -81,6 +82,7 @@ window.addEventListener("scroll", function () {
     let translation = `translateY(${posY}px)`;
     element.style.transform = translation;
   });
+  }
 });
 
 // Loading Page
@@ -149,26 +151,129 @@ function fullwidth(el) {
 // Gallery
 let gallery = document.querySelector(".gallery");
 let galleryItem = document.querySelectorAll(".gallery-item");
+let minigalleryItem = document.querySelectorAll(".minigallery-item");
+
+
 if (gallery) {
   fullwidth(gallery);
 }
 
-function checkImageOrientation() {
-  galleryItem.forEach((element) => {
-    let galleryItemImg = element.querySelector("img");
-    if (galleryItemImg.width > galleryItemImg.height) {
-      // console.log(galleryItemImg.width + ' horizontal');
-      element.classList.add("horizontal");
-    } else if (galleryItemImg.width < galleryItemImg.height) {
-      // console.log(galleryItemImg.height + ' vertical');
-      element.classList.add("vertical");
+function checkImageOrientation(items) {
+  // Vérifier que items existe et n'est pas vide
+  if (!items || items.length === 0) {
+    // console.warn("Aucun élément trouvé pour checkImageOrientation");
+    return;
+  }
+
+  // Convertir NodeList en Array si nécessaire
+  const itemsArray = Array.from(items);
+  
+  itemsArray.forEach((element, index) => {
+    let itemImg = element.querySelector("img");
+    
+    if (!itemImg) {
+      // console.warn(`Pas d'image dans l'élément ${index}`);
+      return;
+    }
+    
+    function processImage() {
+      const width = itemImg.naturalWidth || itemImg.width;
+      const height = itemImg.naturalHeight || itemImg.height;
+      
+      // console.log(`Image ${index}: ${width}x${height}`);
+      
+      if (width > height) {
+        element.classList.add("horizontal");
+      } else if (width < height) {
+        element.classList.add("vertical");
+      } else {
+        element.classList.add("square");
+      }
+    }
+    
+    if (itemImg.complete && itemImg.naturalWidth > 0) {
+      processImage();
+    } else {
+      itemImg.addEventListener('load', processImage);
+      itemImg.addEventListener('error', () => {
+        // console.error('Erreur de chargement:', itemImg.src);
+      });
     }
   });
 }
 
+// Vérifier avant d'appeler les fonctions
+if (galleryItem.length > 0) {
+  checkImageOrientation(galleryItem);
+}
+
+if (minigalleryItem.length > 0) {
+  checkImageOrientation(minigalleryItem);
+}
+
+
+// let minigallery = document.querySelectorAll(".grid-gallery item");
+// checkImageOrientation(minigallery)
+
 // Appeler la fonction après un court délai pour s'assurer que les images sont chargées
 setTimeout(checkImageOrientation, 1000);
 
+
+//Animation chargement des images des galeries fullscreen
+
+function isInViewport(element, threshold = 0.2) {
+    const rect = element.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+    return (
+        rect.top <= viewportHeight * (1 - threshold) && // Corrigé ici
+        rect.bottom >= viewportHeight * threshold &&
+        rect.left >= 0 &&
+        rect.right <= window.innerWidth
+    );
+}
+
+let animationTriggered = false; // Éviter les animations multiples
+
+function checkAndAnimate() {
+    if (animationTriggered) return;
+    
+    let easingElement = document.querySelector(".easing");
+    let images = document.querySelectorAll(".gallery-item");
+    
+    if (!easingElement || images.length === 0) return;
+    
+    if (isInViewport(easingElement)) {
+        animationTriggered = true;
+        let delay = 0;
+        
+        images.forEach((image, index) => {
+            setTimeout(() => {
+                image.style.transition = "all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+                image.style.transform = "translateY(0)";
+                image.style.opacity = "1";
+            }, delay);
+            delay += 250; // Réduit à 150ms pour plus de fluidité
+        });
+        
+        console.log(`${images.length} animations déclenchées !`);
+    }
+}
+
+// Optimisation avec throttling
+let ticking = false;
+document.addEventListener("scroll", () => {
+    if (!ticking) {
+        requestAnimationFrame(() => {
+            checkAndAnimate();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+// Vérification initiale au chargement
+document.addEventListener('DOMContentLoaded', checkAndAnimate);
 //Menu toggle
 
 var burger = document.querySelector(".burger-container"),
@@ -232,3 +337,4 @@ window.addEventListener('scroll', function() {
   }
 }
 );
+

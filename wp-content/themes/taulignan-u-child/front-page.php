@@ -78,7 +78,7 @@ get_header();
                 <div class="icon-wrapper icon-large" id="lavande-01">
                     <img src="https://www.chateaudetaulignan.com/wp-content/uploads/2024/06/lavande-05.svg" alt="Icon 01" />
                 </div>
-                <h2 class="magfhira">Chambres d'hôtes</h2>
+                <h1 class="magfhira">Chambres d'hôtes</h1>
                 <hr class="lavande bw-20" />
                 <p><?php echo get_field('home_chambres_hotes'); ?></p>
                 <div class="a-wrapper flex">

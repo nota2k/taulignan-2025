@@ -24,7 +24,7 @@ get_header();
 			<?php the_field('mariages_accroche'); ?>
 		</section><!-- .entry-header -->
 
-		<div class="entry-content contained">
+		<div class="entry-content fullwidth">
 			<h2><?php the_field('seminaire_accroche'); ?></h2>
 			<?php
 				the_content(

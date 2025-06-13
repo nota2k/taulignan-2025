@@ -27,7 +27,8 @@ Thumbs.db
 
 # Plugins and themes
 wp-content/plugins/
-# wp-content/themes/
+wp-content/themes/
+wp-content/uploads/
 
 # Cache files
 wp-content/cache/

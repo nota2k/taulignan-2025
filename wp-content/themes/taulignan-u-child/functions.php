@@ -66,8 +66,17 @@ function galery_custom($output, $attr) {
     foreach($ids_array as $id) {
         $img_src = wp_get_attachment_image_src($id, 'full');
 
+        // Vérifie si l'image est liée au média
+        $link_to_media = isset($attr['link']) && $attr['link'] === 'file';
+
         $output .= '<div class="gallery-item">'; // Ajoute votre classe personnalisée
-        $output .= '<img src="' . $img_src[0] . '" alt="">';
+        if ($link_to_media) {
+            $output .= '<a href="' . esc_url($img_src[0]) . '">';
+        }
+        $output .= '<img src="' . esc_url($img_src[0]) . '" alt="">';
+        if ($link_to_media) {
+            $output .= '</a>';
+        }
         $output .= '</div>';
     }
 
@@ -75,6 +84,23 @@ function galery_custom($output, $attr) {
 
     return $output;
 }
+
+add_filter('post_gallery', function ($html, $attr, $instance) {
+    if (isset($attr['class']) && $class = $attr['class']) {
+        // Unset attribute to avoid infinite recursive loops
+        unset($attr['class']);
+
+        // Our custom HTML wrapper
+        $html = sprintf(
+            '<div class="%s">%s</div>',
+            esc_attr($class),
+            gallery_shortcode($attr)
+        );
+    }
+
+    return $html;
+}, 10, 3);
+
 
 // Disable contact form email validator
 
